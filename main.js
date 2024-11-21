@@ -40,7 +40,10 @@ let array = [
   exponentialResult,
 ];
 for (let i = 0; i < array.length; i++) {
-  if (sumResult === array[i]) {
+  if (isNaN(array[i])) {
+    alert("Please enter a valid number");
+    document.getElementById("output").innerHTML = "please enter a valid number";
+  } else if (sumResult === array[i]) {
     document.getElementById(
       "output"
     ).innerHTML += `total sum is = ${array[i]} <br />`;

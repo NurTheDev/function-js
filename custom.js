@@ -41,7 +41,9 @@ let array = [
 ];
 
 for (let i of array) {
-  if (i === sumResult) {
+  if (isNaN(i)) {
+    alert("Please enter a valid number");
+  } else if (i === sumResult) {
     document.getElementById("output").innerHTML += `total sum is = ${i} <br />`;
   } else if (i == multiplyResult) {
     document.getElementById(

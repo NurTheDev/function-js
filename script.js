@@ -39,27 +39,28 @@ let array = [
   moduloResult,
   exponentialResult,
 ];
-
 for (let i in array) {
-  if (i === sumResult) {
+  if (isNaN(array[i])) {
+    alert("Please enter a valid number");
+  } else if (array[i] === sumResult) {
     document.getElementById("output").innerHTML += `total sum is = ${i} <br />`;
-  } else if (i == multiplyResult) {
+  } else if (array[i] == multiplyResult) {
     document.getElementById(
       "output"
     ).innerHTML += `total multiplication is = ${i} <br />`;
-  } else if (i == divideResult) {
+  } else if (array[i] == divideResult) {
     document.getElementById(
       "output"
     ).innerHTML += `total division is = ${i} <br />`;
-  } else if (i == subtractResult) {
+  } else if (array[i] == subtractResult) {
     document.getElementById(
       "output"
     ).innerHTML += `total subtract is = ${i} <br />`;
-  } else if (i == moduloResult) {
+  } else if (array[i] == moduloResult) {
     document.getElementById(
       "output"
     ).innerHTML += `total modulo is = ${i} <br />`;
-  } else if (i == exponentialResult) {
+  } else if (array[i] == exponentialResult) {
     document.getElementById(
       "output"
     ).innerHTML += `total exponential is = ${i} <br />`;
